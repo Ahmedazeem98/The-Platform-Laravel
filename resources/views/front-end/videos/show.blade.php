@@ -59,7 +59,7 @@
                         </span>
                     </div>
                 </div>
-                @include('front-end.videos.addComment')
+                @include('front-end.videos.editComment')
                 @if(!$loop->last)
                     <hr>
                 @endif
