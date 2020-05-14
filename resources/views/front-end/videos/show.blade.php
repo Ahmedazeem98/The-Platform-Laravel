@@ -67,7 +67,7 @@
               
                 </div>
             </div>
-              @include('front-end.videos.comments')
+              @include('front-end.videos.addComment')
         </div>
 
 @endsection
