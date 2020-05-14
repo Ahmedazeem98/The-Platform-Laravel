@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Category;
 use App\Models\Page;
+use App\Models\Tag;
 use App\Models\Skill;
 use App\Models\Video;
 use Illuminate\Support\ServiceProvider;
@@ -30,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->share('categories', Category::all());
         view()->share('skills', Skill::all());
+         view()->share('tags', Tag::all());
         view()->share('pages', Page::all());
     }
 }
