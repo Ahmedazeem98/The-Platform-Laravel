@@ -30,11 +30,11 @@
     <li class="nav-item">
       <div class="dropdown">
         <a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Pages
+          Tags
         </a>
         <div class="dropdown-menu">
-          @foreach($pages as $page)
-            <a class="dropdown-item" href="{{route('front.page', ['id' => $page->id, 'slug' => str_replace(' ','_',$page->name)])}}">{{$page->name}}</a>
+          @foreach($tags as $tag)
+            <a class="dropdown-item" href="{{route('front.tag', ['id' => $tag->id])}}">{{$tag->name}}</a>
           @endforeach
         </div>
       </div>
