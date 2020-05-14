@@ -8,7 +8,7 @@
           <div class="form-group">
               <textarea name="comment" class="form-control" cols="50" rows="5"></textarea>
           </div>
-          <input type="hidden" name="video_id" value="{{$comment->video_id}}">
+          <input type="hidden" name="video_id" value="{{$video->id}}">
           <div class="form-group">
               <button class="btn btn-dark" type="submit" cols="50" rows="5">Add</button>
           </div>
